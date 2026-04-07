@@ -9,6 +9,7 @@ app.use(express.json());
 
 
 app.use("/api/products", productsRouter);
+app.use("/api/companies/:company_id/alerts/low-stock", alertsRouter);
 
 
 
